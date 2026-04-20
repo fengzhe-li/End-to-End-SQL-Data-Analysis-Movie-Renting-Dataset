@@ -1,72 +1,130 @@
-# 🎬 End-to-End SQL Data Analysis: Movie Renting Dataset
+# 🎬 End-to-End Entertainment Business Analytics Project
 
 ## 📌 Project Overview
 
-This project analyzes customer rental behavior and movie performance using SQL Server.
+This portfolio project analyzes customer rental behavior, movie performance, revenue trends, and actor popularity using SQL Server and relational data modeling.
 
-The goal was to transform raw rental transaction data into actionable business insights through SQL queries, KPI reporting, and customer segmentation.
+The objective was to transform multiple raw datasets into actionable business insights through advanced SQL analysis and dashboard-ready outputs.
+
+The project evolved from simple transaction analysis into a full entertainment business intelligence case study.
 
 ---
 
-## 🛠 Tools Used
+## 🛠 Tools & Technologies
 
 * SQL Server
-* SQL (T-SQL)
-* Excel / CSV
+* T-SQL
+* CSV / Excel
 * GitHub
+* Power BI (next phase)
 
 ---
 
-## 📊 Key Analysis Performed
+## 🗂 Database Structure
 
-### Customer Analysis
+This project uses a multi-table relational schema:
 
-* Repeat customer rate
+* **customers** → customer information
+* **renting** → rental transactions
+* **movies** → movie catalog and pricing
+* **actors** → actor demographics
+* **actsin** → bridge table linking actors and movies
+
+### Relationship Model
+
+customers ← renting → movies ← actsin → actors
+
+---
+
+## 📊 Business Analysis Performed
+
+### Customer Intelligence
+
 * Customer segmentation (VIP / Active / Low Activity)
-* Top customers ranking
+* Repeat customer analysis
+* Top spending customers
+* Customer lifetime value
+* Country-level customer distribution
 
-### Movie Analysis
+### Revenue Analytics
 
-* Average movie ratings
-* Most popular movies
-* Movie ranking by customer ratings
+* Total rental revenue
+* Revenue by movie
+* Revenue by country
+* Monthly revenue trend
+* Running cumulative revenue
 
-### Business KPI Dashboard
+### Movie Performance
 
-* Total rentals
-* Average rating
-* Monthly rental trends
-* Customer distribution by country
+* Most rented movies
+* Highest rated movies
+* Genre performance analysis
+* Revenue by genre
 
-### Advanced SQL Techniques
+### Actor Analytics
 
-* JOIN
-* GROUP BY
-* HAVING
-* CASE WHEN
-* CTE
+* Most popular actors
+* Actor rental appearances
+* Actor nationality demographics
+* Gender and birth-year analysis
+
+### Advanced SQL Analytics
+
+* Multi-table JOINs
+* GROUP BY / HAVING
+* CASE WHEN logic
+* Common Table Expressions (CTEs)
 * Window Functions
-* RANK()
-* LAG()
+* RANK / DENSE_RANK
+* LAG
+* Running Totals
 
 ---
 
 ## 📈 Sample Insights
 
-* Majority of customers rented only once.
-* A small segment of users were repeat customers.
-* Several movies achieved perfect average ratings.
-* Monthly rentals fluctuated across the dataset period.
+* A small share of customers generated repeat rentals.
+* Revenue was concentrated in a limited number of movie titles.
+* Several genres outperformed others in both ratings and revenue.
+* Actor participation strongly influenced rental volume.
+* Monthly rental activity fluctuated across the observed period.
 
 ---
 
-## 🚀 Next Step
+## 🚀 Power BI Dashboard (Coming Next)
 
-Power BI dashboard integration for visual analytics.
+Planned dashboard pages:
+
+1. Executive Overview
+2. Movie Performance
+3. Customer Intelligence
+4. Actor Analytics
+
+---
+
+## 📁 Repository Structure
+
+```text
+movie-rental-sql-project/
+│── dataset/
+│   ├── customers.csv
+│   ├── renting.csv
+│   ├── movies.csv
+│   ├── actors.csv
+│   └── actsin.csv
+│── sql/
+│   ├── chapter_1_basic_analysis.sql
+│   ├── chapter_2_customer_analysis.sql
+│   ├── chapter_3_kpis.sql
+│   ├── chapter_4_advanced_sql.sql
+│   ├── chapter_5_multitable_analytics.sql
+│   └── chapter_6_window_functions.sql
+│── dashboard/
+│── README.md
+```
 
 ---
 
 ## 👤 Author
 
-Created as a portfolio project for Data Analyst opportunities.
-
+Created by **Fengzhe Li** as a portfolio project for Data Analyst opportunities.
