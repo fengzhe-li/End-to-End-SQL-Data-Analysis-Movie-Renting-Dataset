@@ -1,4 +1,3 @@
-```md id="finalreadme1"
 # 🎬 End-to-End Entertainment Business Analytics Project
 
 ## 📌 Project Overview
@@ -177,4 +176,3 @@ movie-rental-business-analytics/
 
 **Fengzhe Li**  
 Portfolio Project for Data Analyst / Business Intelligence Opportunities
-```
