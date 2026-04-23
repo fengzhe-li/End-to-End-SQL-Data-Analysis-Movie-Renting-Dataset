@@ -2,129 +2,175 @@
 
 ## 📌 Project Overview
 
-This portfolio project analyzes customer rental behavior, movie performance, revenue trends, and actor popularity using SQL Server and relational data modeling.
+This end-to-end portfolio project analyzes customer rental behavior, movie performance, revenue trends, and operational KPIs using SQL Server, relational data modeling, and Power BI.
 
-The objective was to transform multiple raw datasets into actionable business insights through advanced SQL analysis and dashboard-ready outputs.
+The project transforms multiple raw CSV datasets into a business intelligence solution with interactive dashboards and decision-ready insights.
 
-The project evolved from simple transaction analysis into a full entertainment business intelligence case study.
+It demonstrates the complete analytics workflow:
+
+Data Cleaning → SQL Analysis → Data Modeling → KPI Design → Dashboard Development → Executive Reporting
 
 ---
 
 ## 🛠 Tools & Technologies
 
-* SQL Server
-* T-SQL
-* CSV / Excel
-* GitHub
-* Power BI (next phase)
+- SQL Server
+- T-SQL
+- Power BI
+- Excel / CSV
+- GitHub
+- Data Modeling
+- Business Intelligence
 
 ---
 
-## 🗂 Database Structure
+## 🗂 Data Model
 
-This project uses a multi-table relational schema:
+This project uses a relational schema with five connected tables:
 
-* **customers** → customer information
-* **renting** → rental transactions
-* **movies** → movie catalog and pricing
-* **actors** → actor demographics
-* **actsin** → bridge table linking actors and movies
+- **customers** → customer demographics and account details  
+- **renting** → rental transaction records  
+- **movies** → movie catalog, genre, pricing, runtime  
+- **actors** → actor profile data  
+- **actsin** → bridge table connecting movies and actors  
 
-### Relationship Model
+### Relationship Structure
 
 customers ← renting → movies ← actsin → actors
 
 ---
 
-## 📊 Business Analysis Performed
+## 📊 Power BI Dashboard Pages
+
+### 1️⃣ Executive Overview Dashboard
+
+High-level business KPIs and content performance.
+
+![Executive Overview](dashboard/dashboard_01_overview.png)
+
+---
+
+### 2️⃣ Customer Insights Dashboard
+
+Customer behavior, segmentation, repeat rate, and geographic distribution.
+
+![Customer Insights](dashboard/dashboard_02_customer_insights.png)
+
+---
+
+### 3️⃣ Revenue & Growth Dashboard
+
+Revenue trends, country performance, and growth analysis.
+
+![Revenue Growth](dashboard/dashboard_03_revenue_growth.png)
+
+---
+
+### 4️⃣ Operations & Content Dashboard
+
+Movie catalog insights, ratings, pricing, runtime, and release trends.
+
+![Operations Content](dashboard/dashboard_04_operations_content.png)
+
+---
+
+### 5️⃣ Executive Summary Dashboard
+
+Management-ready KPI summary for decision makers.
+
+![Executive Summary](dashboard/dashboard_05_executive_summary.png)
+
+---
+
+### 6️⃣ Technical Showcase Dashboard
+
+Data model design, SQL capabilities, DAX measures, and technical stack.
+
+![Technical Showcase](dashboard/dashboard_06_technical_showcase.png)
+
+---
+
+## 📈 Business Analysis Performed
 
 ### Customer Intelligence
 
-* Customer segmentation (VIP / Active / Low Activity)
-* Repeat customer analysis
-* Top spending customers
-* Customer lifetime value
-* Country-level customer distribution
+- Repeat customer rate
+- Customer segmentation
+- Avg rentals per customer
+- Top spending customers
+- Country analysis
 
 ### Revenue Analytics
 
-* Total rental revenue
-* Revenue by movie
-* Revenue by country
-* Monthly revenue trend
-* Running cumulative revenue
+- Total revenue
+- Revenue by genre
+- Revenue by country
+- Monthly trend
+- Cumulative revenue
 
-### Movie Performance
+### Content Analytics
 
-* Most rented movies
-* Highest rated movies
-* Genre performance analysis
-* Revenue by genre
+- Highest rated movies
+- Lowest rated movies
+- Top rented movies
+- Release year trends
+- Runtime vs rental price
 
-### Actor Analytics
+### Technical Analytics
 
-* Most popular actors
-* Actor rental appearances
-* Actor nationality demographics
-* Gender and birth-year analysis
-
-### Advanced SQL Analytics
-
-* Multi-table JOINs
-* GROUP BY / HAVING
-* CASE WHEN logic
-* Common Table Expressions (CTEs)
-* Window Functions
-* RANK / DENSE_RANK
-* LAG
-* Running Totals
-
----
-
-## 📈 Sample Insights
-
-* A small share of customers generated repeat rentals.
-* Revenue was concentrated in a limited number of movie titles.
-* Several genres outperformed others in both ratings and revenue.
-* Actor participation strongly influenced rental volume.
-* Monthly rental activity fluctuated across the observed period.
-
----
-
-## 🚀 Power BI Dashboard (Coming Next)
-
-Planned dashboard pages:
-
-1. Executive Overview
-2. Movie Performance
-3. Customer Intelligence
-4. Actor Analytics
+- JOINs
+- GROUP BY / HAVING
+- CASE WHEN
+- CTEs
+- Window Functions
+- Ranking
+- Running Totals
+- DAX Measures
 
 ---
 
 ## 📁 Repository Structure
 
-```text
-movie-rental-sql-project/
+movie-rental-business-analytics/
 │── dataset/
 │   ├── customers.csv
 │   ├── renting.csv
 │   ├── movies.csv
 │   ├── actors.csv
 │   └── actsin.csv
+│
 │── sql/
-│   ├── chapter_1_basic_analysis.sql
-│   ├── chapter_2_customer_analysis.sql
-│   ├── chapter_3_kpis.sql
-│   ├── chapter_4_advanced_sql.sql
-│   ├── chapter_5_multitable_analytics.sql
-│   └── chapter_6_window_functions.sql
+│   └── entertainment_business_analysis.sql
+│
 │── dashboard/
-│── README.md
-```
+│   ├── dashboard_01_overview.png
+│   ├── dashboard_02_customer_insights.png
+│   ├── dashboard_03_revenue_growth.png
+│   ├── dashboard_04_operations_content.png
+│   ├── dashboard_05_executive_summary.png
+│   └── dashboard_06_technical_showcase.png
+│
+│── powerbi/
+│   └── entertainment_business_analytics.pbix
+│
+└── README.md
+
+---
+
+## 🚀 Key Skills Demonstrated
+
+- SQL Analytics
+- Data Cleaning
+- Relational Modeling
+- Power BI Dashboarding
+- DAX Measures
+- KPI Design
+- Storytelling with Data
+- Executive Reporting
 
 ---
 
 ## 👤 Author
 
-Created by **Fengzhe Li** as a portfolio project for Data Analyst opportunities.
+**Fengzhe Li**  
+Portfolio Project for Data Analyst / Business Intelligence Opportunities
