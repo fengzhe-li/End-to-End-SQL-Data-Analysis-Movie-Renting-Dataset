@@ -1,176 +1,121 @@
 # 🎬 End-to-End Entertainment Business Analytics Project
 
-## 📌 Project Overview
-
-This end-to-end portfolio project analyzes customer rental behavior, movie performance, revenue trends, and operational KPIs using SQL Server, relational data modeling, and Power BI.
-
-The project transforms multiple raw CSV datasets into a business intelligence solution with interactive dashboards and decision-ready insights.
-
-It demonstrates the complete analytics workflow:
-
-Data Cleaning → SQL Analysis → Data Modeling → KPI Design → Dashboard Development → Executive Reporting
-
----
-
-## 🛠 Tools & Technologies
-
-- SQL Server
-- T-SQL
-- Power BI
-- Excel / CSV
-- GitHub
-- Data Modeling
-- Business Intelligence
-
----
-
-## 🗂 Data Model
-
-This project uses a relational schema with five connected tables:
-
-- **customers** → customer demographics and account details  
-- **renting** → rental transaction records  
-- **movies** → movie catalog, genre, pricing, runtime  
-- **actors** → actor profile data  
-- **actsin** → bridge table connecting movies and actors  
-
-### Relationship Structure
-
-customers ← renting → movies ← actsin → actors
-
----
-
-## 📊 Power BI Dashboard Pages
-
-### 1️⃣ Executive Overview Dashboard
-
-High-level business KPIs and content performance.
+Interactive SQL Server + Power BI business intelligence solution analyzing customer rentals, movie performance, revenue growth, and operational KPIs.
 
 ![Executive Overview](dashboard/dashboard_01_overview.png)
 
 ---
 
-### 2️⃣ Customer Insights Dashboard
+## 📌 Business Problem
 
-Customer behavior, segmentation, repeat rate, and geographic distribution.
+A movie rental company needs better visibility into:
 
-![Customer Insights](dashboard/dashboard_02_customer_insights.png)
+* Customer retention
+* Revenue drivers
+* Genre performance
+* Content ratings
+* Geographic demand
+* Executive KPI reporting
 
----
-
-### 3️⃣ Revenue & Growth Dashboard
-
-Revenue trends, country performance, and growth analysis.
-
-![Revenue Growth](dashboard/dashboard_03_revenue_growth.png)
-
----
-
-### 4️⃣ Operations & Content Dashboard
-
-Movie catalog insights, ratings, pricing, runtime, and release trends.
-
-![Operations Content](dashboard/dashboard_04_operations_content.png)
+This project transforms raw CSV data into a complete analytics reporting solution.
 
 ---
 
-### 5️⃣ Executive Summary Dashboard
+## ⭐ Key Achievements
 
-Management-ready KPI summary for decision makers.
-
-![Executive Summary](dashboard/dashboard_05_executive_summary.png)
+* Built **6 interactive Power BI dashboards**
+* Analyzed **100 customers / 5,000 rental transactions**
+* Designed **5-table relational data model**
+* Wrote **50+ SQL queries**
+* Created **10+ DAX measures**
+* Published full portfolio project on GitHub
 
 ---
 
-### 6️⃣ Technical Showcase Dashboard
+## 🛠 Tech Stack
 
-Data model design, SQL capabilities, DAX measures, and technical stack.
+* SQL Server
+* T-SQL
+* Power BI
+* DAX
+* Excel / CSV
+* GitHub
+
+---
+
+## 🗂 Data Model
+
+customers ← renting → movies ← actsin → actors
 
 ![Technical Showcase](dashboard/dashboard_06_technical_showcase.png)
 
 ---
 
-## 📈 Business Analysis Performed
+## 📊 Dashboard Pages
 
-### Customer Intelligence
+### 1. Executive Overview
 
-- Repeat customer rate
-- Customer segmentation
-- Avg rentals per customer
-- Top spending customers
-- Country analysis
+Business KPIs, genre performance, rental trends.
 
-### Revenue Analytics
+![Executive Overview](dashboard/dashboard_01_overview.png)
 
-- Total revenue
-- Revenue by genre
-- Revenue by country
-- Monthly trend
-- Cumulative revenue
+### 2. Customer Insights
 
-### Content Analytics
+Segmentation, repeat customers, top spenders.
 
-- Highest rated movies
-- Lowest rated movies
-- Top rented movies
-- Release year trends
-- Runtime vs rental price
+![Customer Insights](dashboard/dashboard_02_customer_insights.png)
 
-### Technical Analytics
+### 3. Revenue & Growth
 
-- JOINs
-- GROUP BY / HAVING
-- CASE WHEN
-- CTEs
-- Window Functions
-- Ranking
-- Running Totals
-- DAX Measures
+Monthly growth, country revenue, cumulative sales.
 
----
+![Revenue Growth](dashboard/dashboard_03_revenue_growth.png)
 
-## 📁 Repository Structure
+### 4. Operations & Content
 
-movie-rental-business-analytics/
-│── dataset/
-│   ├── customers.csv
-│   ├── renting.csv
-│   ├── movies.csv
-│   ├── actors.csv
-│   └── actsin.csv
-│
-│── sql/
-│   └── entertainment_business_analysis.sql
-│
-│── dashboard/
-│   ├── dashboard_01_overview.png
-│   ├── dashboard_02_customer_insights.png
-│   ├── dashboard_03_revenue_growth.png
-│   ├── dashboard_04_operations_content.png
-│   ├── dashboard_05_executive_summary.png
-│   └── dashboard_06_technical_showcase.png
-│
-│── powerbi/
-│   └── entertainment_business_analytics.pbix
-│
-└── README.md
+Ratings, runtime, release year, catalog analysis.
+
+![Operations Content](dashboard/dashboard_04_operations_content.png)
+
+### 5. Executive Summary
+
+Board-level KPI summary.
+
+![Executive Summary](dashboard/dashboard_05_executive_summary.png)
+
+### 6. Technical Showcase
+
+SQL, DAX, data model, BI capabilities.
+
+![Technical Showcase](dashboard/dashboard_06_technical_showcase.png)
 
 ---
 
-## 🚀 Key Skills Demonstrated
+## 📈 SQL Skills Demonstrated
 
-- SQL Analytics
-- Data Cleaning
-- Relational Modeling
-- Power BI Dashboarding
-- DAX Measures
-- KPI Design
-- Storytelling with Data
-- Executive Reporting
+* JOINs
+* GROUP BY / HAVING
+* CASE WHEN
+* CTEs
+* Window Functions
+* RANK / DENSE_RANK
+* Running Totals
+* Growth Analysis
+
+---
+
+## 🚀 Business Insights Generated
+
+* Repeat customers drive higher value
+* Revenue concentrated in top titles
+* Genre demand varies significantly
+* Monthly activity fluctuates seasonally
+* Country performance reveals expansion opportunities
 
 ---
 
 ## 👤 Author
 
-**Fengzhe Li**  
-Portfolio Project for Data Analyst / Business Intelligence Opportunities
+**Fengzhe Li**
+Data Analyst / BI Analyst Portfolio Project
+Open to UK opportunities
