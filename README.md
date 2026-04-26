@@ -1,4 +1,4 @@
-# 🎬 End-to-End Entertainment Business Analytics Project
+# 🎬 Customer Revenue Analytics Project
 
 ## 📌 Project Overview
 
